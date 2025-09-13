@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meat Freshness Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1> Meat Freshness Visualizer</h1>
+    <p>Estimate freshness using chemistry-based decay logic</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <label for="meat-type">Meat Type:</label>
+      <select id="meat-type">
+        <option value="beef">Beef</option>
+        <option value="pork">Pork</option>
+        <option value="chicken">Chicken</option>
+      </select>
+
+      <label for="temperature">Ambient Temperature (°C):</label>
+      <input type="number" id="temperature" placeholder="e.g. 25" />
+
+      <label for="hours">Hours Since Slaughter:</label>
+      <input type="number" id="hours" placeholder="e.g. 12" />
+
+      <button onclick="calculateFreshness()">Calculate Freshness</button>
+    </section>
+
+    <section class="output-section">
+      <h2>Freshness Score:</h2>
+      <div id="freshness-meter">--</div>
+      <p id="decay-tip"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by industrial chemistry logic</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
