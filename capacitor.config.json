@@ -1,20 +1,23 @@
 {
   "appId": "com.meatprofiler.app",
-  "appName": "Meat Freshness Visualizer",
+  "appName": "MeAt",
   "webDir": "www.meatprofiler",
   "server": {
     "androidScheme": "https"
   },
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 3000,
+      "launchShowDuration": 4000,
       "launchAutoHide": true,
       "backgroundColor": "#8b0000",
       "androidSplashResourceName": "splash",
       "androidScaleType": "CENTER_CROP",
       "showSpinner": true,
       "androidSpinnerStyle": "large",
-      "spinnerColor": "#ff6b6b"
+      "spinnerColor": "#ff6b6b",
+      "splashFullScreen": true,
+      "splashImmersive": true,
+      "layoutName": "splash_screen"
     }
   }
 }

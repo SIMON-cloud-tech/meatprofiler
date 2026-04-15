@@ -1,0 +1,74 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="meatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b0000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dc143c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="backgroundGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.3"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="url(#meatGradient)"/>
+  <rect width="1080" height="1920" fill="url(#backgroundGlow)"/>
+  
+  <!-- Fresh Meat Illustration -->
+  <g transform="translate(540, 600)">
+    <!-- Meat steak shape -->
+    <ellipse cx="0" cy="0" rx="180" ry="120" fill="#ff6b6b" opacity="0.9" filter="url(#shadow)"/>
+    <ellipse cx="0" cy="-10" rx="160" ry="100" fill="#ff8787" opacity="0.7"/>
+    
+    <!-- Fresh meat details -->
+    <ellipse cx="-40" cy="-20" rx="25" ry="15" fill="#ffaaaa" opacity="0.6"/>
+    <ellipse cx="40" cy="10" rx="20" ry="12" fill="#ffaaaa" opacity="0.6"/>
+    <ellipse cx="0" cy="30" rx="30" ry="18" fill="#ffaaaa" opacity="0.6"/>
+    
+    <!-- Freshness indicators -->
+    <circle cx="-60" cy="-40" r="8" fill="#4CAF50" opacity="0.8"/>
+    <circle cx="60" cy="-20" r="8" fill="#4CAF50" opacity="0.8"/>
+    <circle cx="0" cy="-60" r="8" fill="#4CAF50" opacity="0.8"/>
+    
+    <!-- Steam/ freshness effect -->
+    <path d="M -30,-80 Q -25,-90 -20,-100 T -10,-120" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.4"/>
+    <path d="M 10,-85 Q 15,-95 20,-105 T 30,-125" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.4"/>
+    <path d="M -50,-75 Q -45,-85 -40,-95 T -30,-115" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.4"/>
+  </g>
+  
+  <!-- App Name -->
+  <text x="540" y="1200" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#ffffff" text-anchor="middle" filter="url(#shadow)">
+    MeAt
+  </text>
+  
+  <!-- Tagline -->
+  <text x="540" y="1350" font-family="Arial, sans-serif" font-size="36" font-weight="500" fill="#ffffff" text-anchor="middle" opacity="0.9">
+    Freshness Visualizer
+  </text>
+  
+  <!-- Freshness indicator bars -->
+  <g transform="translate(540, 1450)">
+    <rect x="-200" y="0" width="400" height="8" rx="4" fill="#ffffff" opacity="0.2"/>
+    <rect x="-200" y="0" width="320" height="8" rx="4" fill="#4CAF50"/>
+    <rect x="-200" y="20" width="400" height="8" rx="4" fill="#ffffff" opacity="0.2"/>
+    <rect x="-200" y="20" width="280" height="8" rx="4" fill="#FFC107"/>
+    <rect x="-200" y="40" width="400" height="8" rx="4" fill="#ffffff" opacity="0.2"/>
+    <rect x="-200" y="40" width="360" height="8" rx="4" fill="#2196F3"/>
+  </g>
+  
+  <!-- Bottom decoration -->
+  <circle cx="540" cy="1700" r="60" fill="#ffffff" opacity="0.1"/>
+  <circle cx="440" cy="1750" r="40" fill="#ffffff" opacity="0.08"/>
+  <circle cx="640" cy="1750" r="40" fill="#ffffff" opacity="0.08"/>
+</svg>

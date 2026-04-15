@@ -359,7 +359,16 @@ function calculateFreshness() {
 function generateDetailedReport(meatType, temp, hours, results) {
   const timestamp = new Date().toLocaleString();
   const { score, microbialGrowth, chemicalChanges, safetyRisk, temperatureZone, meatProfile } = results;
-  const reportWindow = window.open('', '', 'width=900,height=700');
+  
+  // Create a unique window name to avoid conflicts
+  const windowName = 'meat-report-' + Date.now();
+  const reportWindow = window.open('', windowName, 'width=900,height=700,scrollbars=yes,resizable=yes');
+  
+  // Check if popup was blocked
+  if (!reportWindow) {
+    showToast('Popup blocked! Please allow popups and try again.', 'error');
+    return;
+  }
 
   reportWindow.document.write(`
     <html>

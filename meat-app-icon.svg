@@ -1,0 +1,52 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b0000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dc143c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="iconGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+    <filter id="iconShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="3" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.4"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#iconBg)" filter="url(#iconShadow)"/>
+  <circle cx="256" cy="256" r="240" fill="url(#iconGlow)"/>
+  
+  <!-- Meat icon design -->
+  <g transform="translate(256, 256)">
+    <!-- Main meat shape -->
+    <ellipse cx="0" cy="0" rx="120" ry="80" fill="#ff6b6b" opacity="0.9"/>
+    <ellipse cx="0" cy="-10" rx="100" ry="60" fill="#ff8787" opacity="0.7"/>
+    
+    <!-- Fresh meat details -->
+    <ellipse cx="-30" cy="-15" rx="20" ry="12" fill="#ffaaaa" opacity="0.6"/>
+    <ellipse cx="30" cy="5" rx="18" ry="10" fill="#ffaaaa" opacity="0.6"/>
+    <ellipse cx="0" cy="20" rx="25" ry="15" fill="#ffaaaa" opacity="0.6"/>
+    
+    <!-- Freshness indicators -->
+    <circle cx="-40" cy="-35" r="6" fill="#4CAF50" opacity="0.9"/>
+    <circle cx="40" cy="-15" r="6" fill="#4CAF50" opacity="0.9"/>
+    <circle cx="0" cy="-45" r="6" fill="#4CAF50" opacity="0.9"/>
+    
+    <!-- Text "MeAt" -->
+    <text x="0" y="5" font-family="Arial Black, sans-serif" font-size="42" font-weight="900" fill="#ffffff" text-anchor="middle" text-shadow="0 2px 4px rgba(0,0,0,0.5)">
+      MeAt
+    </text>
+  </g>
+  
+  <!-- Subtle shine effect -->
+  <ellipse cx="256" cy="200" rx="180" ry="100" fill="url(#iconGlow)" opacity="0.5"/>
+</svg>
