@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online APK Builder - Meat Freshness Visualizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #8b0000, #dc143c);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .method {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .method h3 {
+            color: #ff6b6b;
+            margin-top: 0;
+        }
+        .step {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #ff6b6b;
+        }
+        .step-number {
+            background: #ff6b6b;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .warning {
+            background: rgba(255, 193, 7, 0.2);
+            border: 1px solid rgba(255, 193, 7, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success {
+            background: rgba(76, 175, 80, 0.2);
+            border: 1px solid rgba(76, 175, 80, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .code {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 10px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online APK Builder - Meat Freshness Visualizer</h1>
+        
+        <div class="warning">
+            <strong>Important:</strong> You don't need Android Studio! Use any of these methods to get the app on your phone.
+        </div>
+
+        <div class="method">
+            <h3>Method 1: GitHub Actions (Recommended)</h3>
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Go to GitHub:</strong> <a href="https://github.com/SIMON-cloud-tech/meatprofiler/actions" target="_blank" class="button">Open Actions</a>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Click "Build Android APK" workflow</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Click "Run workflow" button</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Wait 2-3 minutes for build to complete</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">5</span>
+                <strong>Download the APK from "Artifacts" section</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">6</span>
+                <strong>Install on your phone (enable unknown sources)</strong>
+            </div>
+        </div>
+
+        <div class="method">
+            <h3>Method 2: Web App (Easiest - No Installation)</h3>
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Open in browser:</strong> <a href="https://meatprofiler.app" target="_blank" class="button">Open App</a>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Tap menu (3 dots) and select "Add to Home screen"</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>App icon appears on your home screen</strong>
+            </div>
+            <div class="success">
+                Works exactly like a native app! All features available including offline mode.
+            </div>
+        </div>
+
+        <div class="method">
+            <h3>Method 3: Online Build Services</h3>
+            
+            <div class="step">
+                <span class="step-number">A</span>
+                <strong>AppGyver:</strong> <a href="https://www.appgyver.com/" target="_blank" class="button">Try AppGyver</a>
+                <p>Import your web app and build Android APK online</p>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">B</span>
+                <strong>PhoneGap Build:</strong> <a href="https://build.phonegap.com/" target="_blank" class="button">Try PhoneGap</a>
+                <p>Upload your www folder and get APK</p>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">C</span>
+                <strong>Ionic Appflow:</strong> <a href="https://ionicframework.com/appflow" target="_blank" class="button">Try Ionic</a>
+                <p>Connect GitHub and build automatically</p>
+            </div>
+        </div>
+
+        <div class="method">
+            <h3>Method 4: GitHub Codespaces (Advanced)</h3>
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Go to GitHub repository</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Click "<> Code" button</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Select "Codespaces" tab</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Click "Create codespace on main"</strong>
+            </div>
+            <div class="step">
+                <span class="step-number">5</span>
+                <strong>In terminal, run:</strong>
+                <div class="code">
+                    cd android<br>
+                    ./gradlew assembleDebug
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-number">6</span>
+                <strong>Download APK from file explorer</strong>
+            </div>
+        </div>
+
+        <div class="success">
+            <h3>Quick Recommendation:</h3>
+            <p><strong>For most users:</strong> Use Method 2 (Web App) - it's instant and works perfectly!</p>
+            <p><strong>For native app:</strong> Use Method 1 (GitHub Actions) - no Android Studio needed!</p>
+        </div>
+
+        <div class="warning">
+            <h3>Installation Help:</h3>
+            <p>If you get "Install blocked" error:</p>
+            <ul>
+                <li>Go to Settings > Apps & notifications > Special access > Install unknown apps</li>
+                <li>Allow your browser/file manager to install APKs</li>
+                <li>Try installing again</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect timer
+        let countdown = 10;
+        const timerElement = document.createElement('div');
+        timerElement.style.cssText = 'position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); color: white; padding: 10px 20px; border-radius: 10px; font-size: 14px;';
+        document.body.appendChild(timerElement);
+
+        function updateTimer() {
+            if (countdown > 0) {
+                timerElement.innerHTML = `Redirecting to GitHub Actions in ${countdown} seconds...`;
+                countdown--;
+                setTimeout(updateTimer, 1000);
+            } else {
+                window.open('https://github.com/SIMON-cloud-tech/meatprofiler/actions', '_blank');
+            }
+        }
+        updateTimer();
+    </script>
+</body>
+</html>
