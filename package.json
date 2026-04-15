@@ -1,0 +1,27 @@
+{
+  "name": "meatprofiler",
+  "version": "1.0.0",
+  "description": "Estimate meat freshness using chemistry-based decay logic. This tool helps users visually assess the freshness of meat products based on time, temperature, and decay models rooted in food chemistry.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIMON-cloud-tech/meatprofiler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SIMON-cloud-tech/meatprofiler/issues"
+  },
+  "homepage": "https://github.com/SIMON-cloud-tech/meatprofiler#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.3.0",
+    "@capacitor/cli": "^8.3.0",
+    "@capacitor/core": "^8.3.0",
+    "@capacitor/splash-screen": "^8.0.1"
+  }
+}
