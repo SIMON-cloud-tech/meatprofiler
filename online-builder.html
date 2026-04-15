@@ -105,30 +105,26 @@
         </div>
 
         <div class="method">
-            <h3>Method 1: GitHub Actions (Recommended)</h3>
+            <h3>Method 1: AppGyver (Easiest - No Coding)</h3>
             <div class="step">
                 <span class="step-number">1</span>
-                <strong>Go to GitHub:</strong> <a href="https://github.com/SIMON-cloud-tech/meatprofiler/actions" target="_blank" class="button">Open Actions</a>
+                <strong>Go to AppGyver:</strong> <a href="https://www.appgyver.com/" target="_blank" class="button">Open AppGyver</a>
             </div>
             <div class="step">
                 <span class="step-number">2</span>
-                <strong>Click "Build Android APK" workflow</strong>
+                <strong>Sign up for free account</strong>
             </div>
             <div class="step">
                 <span class="step-number">3</span>
-                <strong>Click "Run workflow" button</strong>
+                <strong>Click "Create New App" > "Web App"</strong>
             </div>
             <div class="step">
                 <span class="step-number">4</span>
-                <strong>Wait 2-3 minutes for build to complete</strong>
+                <strong>Import URL: https://meatprofiler.app</strong>
             </div>
             <div class="step">
                 <span class="step-number">5</span>
-                <strong>Download the APK from "Artifacts" section</strong>
-            </div>
-            <div class="step">
-                <span class="step-number">6</span>
-                <strong>Install on your phone (enable unknown sources)</strong>
+                <strong>Click "Build" > "Android" > Download APK</strong>
             </div>
         </div>
 
@@ -174,41 +170,33 @@
         </div>
 
         <div class="method">
-            <h3>Method 4: GitHub Codespaces (Advanced)</h3>
+            <h3>Method 3: PhoneGap Build (Simple)</h3>
             <div class="step">
                 <span class="step-number">1</span>
-                <strong>Go to GitHub repository</strong>
+                <strong>Go to PhoneGap:</strong> <a href="https://build.phonegap.com/" target="_blank" class="button">Open PhoneGap</a>
             </div>
             <div class="step">
                 <span class="step-number">2</span>
-                <strong>Click "<> Code" button</strong>
+                <strong>Sign up for free account</strong>
             </div>
             <div class="step">
                 <span class="step-number">3</span>
-                <strong>Select "Codespaces" tab</strong>
+                <strong>Click "New App" > Upload www folder</strong>
             </div>
             <div class="step">
                 <span class="step-number">4</span>
-                <strong>Click "Create codespace on main"</strong>
+                <strong>Click "Build for Android"</strong>
             </div>
             <div class="step">
                 <span class="step-number">5</span>
-                <strong>In terminal, run:</strong>
-                <div class="code">
-                    cd android<br>
-                    ./gradlew assembleDebug
-                </div>
-            </div>
-            <div class="step">
-                <span class="step-number">6</span>
-                <strong>Download APK from file explorer</strong>
+                <strong>Download the APK file</strong>
             </div>
         </div>
 
         <div class="success">
             <h3>Quick Recommendation:</h3>
             <p><strong>For most users:</strong> Use Method 2 (Web App) - it's instant and works perfectly!</p>
-            <p><strong>For native app:</strong> Use Method 1 (GitHub Actions) - no Android Studio needed!</p>
+            <p><strong>For native app:</strong> Use Method 1 (AppGyver) - easiest online builder!</p>
         </div>
 
         <div class="warning">
@@ -223,22 +211,8 @@
     </div>
 
     <script>
-        // Auto-redirect timer
-        let countdown = 10;
-        const timerElement = document.createElement('div');
-        timerElement.style.cssText = 'position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); color: white; padding: 10px 20px; border-radius: 10px; font-size: 14px;';
-        document.body.appendChild(timerElement);
-
-        function updateTimer() {
-            if (countdown > 0) {
-                timerElement.innerHTML = `Redirecting to GitHub Actions in ${countdown} seconds...`;
-                countdown--;
-                setTimeout(updateTimer, 1000);
-            } else {
-                window.open('https://github.com/SIMON-cloud-tech/meatprofiler/actions', '_blank');
-            }
-        }
-        updateTimer();
+        // Remove auto-redirect since we're not using GitHub Actions anymore
+        console.log('Online APK Builder loaded - use the recommended methods above');
     </script>
 </body>
 </html>
